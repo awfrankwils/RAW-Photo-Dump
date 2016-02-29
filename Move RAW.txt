@@ -1,0 +1,4 @@
+cd /volumes/home/Camera\ RAW/2016/
+mkdir Feb\ Monuments/
+cd /volumes/home/Camera\ RAW/2016/Feb\ Monuments/
+mv /volumes/NIKON\ D5300/DCIM/100D5300/*.NEF . 
