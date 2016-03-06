@@ -1,0 +1,8 @@
+
+
+
+#Move files from Memory Card
+mv /volumes/NIKON\ D5300/DCIM/100D5300/*.NEF . 
+
+#For above
+cd /volumes/home/Camera\ RAW/
