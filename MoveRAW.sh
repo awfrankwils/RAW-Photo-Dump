@@ -7,23 +7,25 @@ echo
 echo "       Created by Andrew Frank-Wilson"
 echo
 echo
-#Set to Photo Storage Directory 'Camera Raw'
+#Set to Photo Storage Directory 'Camera Raw' (for testing, the testdir)
 cd /volumes/home/Camera\ RAW/2016/Feb\ Monuments/testdir
-echo
+
 echo "The current Photo Storage Directory is: "
 pwd
+echo
+echo "The current Source Directory is: "
+echo /volumes/home/Camera\ RAW/testcard/
+echo
 echo "What would you like to call this shoot?: "
 read eventname
 
+
+#for all RAW files that exist in the memory card directory
 for fname in *.NEF
 do
 	[ -s $fname ] && year=$(exiftool -d '%Y' -DateTimeOriginal $fname|cut -c 35-) 
-#function that makes a directory and cds into it. call by mcd. 
 mcd() { mkdir -p "$1"; cd "$1";}
 mcd $year
-#Create Folder with event name and change directory into it...
 mcd $eventname
-if [ `exiftool -d '%Y' -DateTimeOriginal $fname|cut -c 35-` = "$year" ]
-then mv /volumes/home/Camera\ RAW/2016/Feb\ Monuments/testdir/$fname.NEF .
 fi
 done
