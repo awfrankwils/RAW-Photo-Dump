@@ -1,9 +1,11 @@
 #!/bin/bash
 echo
-echo###################################################
-echo##"Weclome to the Frank-Wilson Photo-Dumper V1.0"##
-echo###################################################
-echo "        Created by Andrew Frank-Wilson"
+echo
+echo
+echo 'Weclome to the Frank-Wilson Photo-Dumper V1.0'
+echo
+echo "       Created by Andrew Frank-Wilson"
+echo
 echo
 #Set to Photo Storage Directory 'Camera Raw'
 cd /volumes/home/Camera\ RAW/2016/Feb\ Monuments/testdir
