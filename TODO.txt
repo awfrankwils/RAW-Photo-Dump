@@ -1,0 +1,6 @@
+The finished product will be executable from the GUI via an icon
+
+Feature that need to be added:
+1. Mount NAS drives (caution with inserting passwords into code; perhaps get it to ask you for them)
+2. Detect images taken so many days apart, prompt user to create separate or a single filefolder
+3. Make event input read spaces
