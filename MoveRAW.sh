@@ -12,7 +12,7 @@ echo
 #To set NAS mount, call shell script with path "./NASmount.sh" this file contains "mkdir /Volumes/MyShare; mount_afp afp://username:password@192.168.1.25/ShareName /Volumes/MyShare"
 
 #Set directory to Location of ./NASmount.sh
-cd /Documents/MoveRAW/
+cd ~/Documents/MoveRAW/
 #Call mount script
 ./NASmount.sh
 ###
