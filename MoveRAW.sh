@@ -7,6 +7,16 @@ echo
 echo "       Created by Andrew Frank-Wilson"
 echo
 echo
+
+###This script is intented to move RAW image files into a network attached storage drive, which needs to be mounted. 
+#To set NAS mount, call shell script with path "./NASmount.sh" this file contains "mkdir /Volumes/MyShare; mount_afp afp://username:password@192.168.1.25/ShareName /Volumes/MyShare"
+
+#Set directory to Location of ./NASmount.sh
+cd /Documents/MoveRAW/
+#Call mount script
+./NASmount.sh
+###
+
 #Set to Photo Storage Directory 'Camera Raw' (for testing, the testdir)
 #cd /volumes/home/Camera\ RAW/2016/Feb\ Monuments/testdir
 cd /volumes/home/Camera\ RAW/
