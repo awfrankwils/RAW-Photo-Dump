@@ -2,7 +2,7 @@
 echo
 echo
 echo
-echo 'Weclome to the Frank-Wilson Photo-Dumper V1.0'
+echo 'Weclome to the Frank-Wilson Photo-Dumper V1.1'
 echo
 echo "       Created by Andrew Frank-Wilson"
 echo
@@ -25,7 +25,7 @@ echo "The current Photo Storage Directory is: "
 pwd
 echo
 echo "The current Source Directory is: "
-echo /volumes/NIKON\ D5300/DCIM/100D5300/
+echo /volumes/NIKON\ D5300/DCIM/101D5300/
 #/volumes/home/Camera\ RAW/testcard/
 echo
 echo "What would you like to call this shoot?: "
