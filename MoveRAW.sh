@@ -34,7 +34,7 @@ read eventname
 
 #for all RAW files that exist in the memory card directory
 #cd /volumes/home/Camera\ RAW/testcard/
-cd /volumes/NIKON\ D5300/DCIM/100D5300/
+cd /volumes/NIKON\ D5300/DCIM/101D5300/
 IFS=$'\n' 
 for fname in *.NEF
 do #checks that the NEF file has a size, and then reads the date info and generates a year variable for that photograph.  
@@ -54,11 +54,11 @@ mcd $eventname
 	#mv /volumes/home/Camera\ RAW/testcard/$fname .
 	#cd /volumes/home/Camera\ RAW/testcard/
 	#fi
-if cd /volumes/NIKON\ D5300/DCIM/100D5300/ && [ `exiftool -d '%Y' -DateTimeOriginal $fname|cut -c 35-` = "$year" ] 
+if cd /volumes/NIKON\ D5300/DCIM/101D5300/ && [ `exiftool -d '%Y' -DateTimeOriginal $fname|cut -c 35-` = "$year" ] 
 then 
 	cd /volumes/home/Camera\ RAW/$year/$eventname/
-	mv /volumes/NIKON\ D5300/DCIM/100D5300/$fname .
-	cd /volumes/NIKON\ D5300/DCIM/100D5300/
+	mv /volumes/NIKON\ D5300/DCIM/101D5300/$fname .
+	cd /volumes/NIKON\ D5300/DCIM/101D5300/
 fi
 done
 echo
